@@ -1,0 +1,15 @@
+/*
+div - Selector
+{} - Expression
+height - property
+200px - value
+*/
+div {
+    height: 200px;
+    width: 400px;
+    background-color: cyan;
+}
+
+h1 {
+    color: crimson;
+}
