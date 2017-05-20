@@ -1,0 +1,28 @@
+#two-col {
+    background-color: teal;
+    /*height: 300px;*/
+}
+
+/* Clearfix */
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col_1 {
+    float: left;
+    width: 50%;
+    /*background-color: #bb0000;*/
+}
+.col_2 {
+    float: left;
+    width: 50%;
+    background-color: #0084b4;
+}
+/*.blank {
+    clear: left;
+}*/
+.col_3 {
+    background-color: bisque;
+}
