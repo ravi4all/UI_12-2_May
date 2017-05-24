@@ -185,3 +185,113 @@ Header
 hr {
     margin-top: 0px;
 }
+
+#content h3 {
+    margin-top: 0px;
+    border-bottom: 1px solid #606060;
+    padding-bottom: 10px;
+}
+
+#main {
+    float: left;
+    width: 67%;
+    position: relative;
+    padding-right: 15px;
+    border-right: 1px solid lightgray;
+}
+#main h1 {
+    margin-top: 0px;
+}
+#main h1 a {
+    color: #000;
+    text-decoration: none;
+}
+#main h3 a {
+    text-decoration: none;
+}
+#main a:hover {
+    color: #0080c3;
+}
+#main .column {
+    float: left;
+    width: 45%;
+    padding: 0px 15px 0px 0px;
+    border-right: 1px solid #606060;
+}
+#main .column:last-child {
+    padding: 0px 0px 0px 15px;
+    border-right: none;
+}
+#main .column ul {
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+}
+#main .column ul li {
+    margin-bottom: 5px;
+}
+#main .column ul li h5 {
+    margin: 0px;
+}
+#main .column ul li a{
+    color: #000;
+    text-decoration: none;
+}
+#main .column ul li a:hover{
+    color: #0080c3;
+}
+#main .news {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666666;
+    margin-bottom: 12px;
+}
+#main .column .news:last-child {
+    border: none;
+}
+/*#main .news .news_text {
+    float: left;
+}*/
+#main .news .news_image {
+    float: right;
+}
+#main h2 {
+    font-size: 22px;
+    line-height: 26px;
+}
+#main h2 a {
+    text-decoration: none;
+    color: #000;
+}
+#main .main_image img {
+    width: 100%;
+}
+#main .main_image p {
+    margin-top: 0px;
+}
+
+#main:before,#sidebar:before {
+    content: '';
+    border: 1px solid #000;
+    position: absolute;
+    width: 98%;
+    top: -10px;
+}
+
+
+#sidebar {
+    float: right;
+    width: 30%;
+    position: relative;
+}
+#sidebar .stock_table table {
+    width: 100%;
+    cursor: pointer;
+}
+#sidebar .stock_table table td {
+    border: none;
+}
+#sidebar .stock_table table tr:first-child {
+    background-color: lightgray;
+}
+#sidebar .stock_table table tr:hover td {
+    font-weight: bold;
+}
