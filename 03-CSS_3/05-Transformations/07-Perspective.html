@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div_1 {
+            height: 200px;
+            width: 200px;
+            padding: 20px;
+            margin: 0 auto;
+            border: 2px solid red;
+            perspective: 400px;
+            position: relative;
+            margin-top: 100px;
+            transition: 4s;
+        }
+        #div_1 div {
+            position: absolute;
+            height: 180px;
+            width: 180px;
+            transition: 3s;
+        }
+        .div_2 {
+            left: -200px;
+            background-color: red;
+            transform: rotateY(50deg);
+        }
+        .div_3 {
+            background-color: #3b5998;
+            right: -200px;
+            transform: rotateY(-50deg);
+        }
+        .div_4 {
+            background-color: #fb3958;
+            top: -200px;
+            transform: rotateX(-50deg);
+        }
+        .div_5 {
+            background-color: brown;
+            bottom: -200px;
+            transform: rotateX(50deg);
+        }
+        .div_6 {
+            background-color: darkgrey;
+            top: 0px;
+            /*transform: rotateY(-50deg);*/
+        }
+        .div_7 {
+            background-color: sienna;
+            right: -50px;
+            top: 50px;
+            /*transform: rotateY(-50deg);*/
+        }
+        /*#div_1:hover div {
+            transform: rotateY(360deg);
+        }*/
+        #div_1:hover {
+            /*transform: rotateZ(360deg);*/
+        }
+    </style>
+</head>
+<body>
+
+<h1>Perspective</h1>
+
+<div id="div_1">
+    <div class="div_2">
+
+    </div>
+    <div class="div_3">
+
+    </div>
+    <div class="div_4">
+
+    </div>
+    <div class="div_5">
+
+    </div>
+    <div class="div_6">
+
+    </div>
+    <div class="div_7">
+
+    </div>
+</div>
+
+</body>
+</html>
