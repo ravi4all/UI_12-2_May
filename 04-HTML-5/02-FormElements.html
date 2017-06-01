@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Form Elements</h1>
+
+<form action="">
+    <table>
+        <tr>
+            <td>Enter Name</td>
+            <td><input type="text" placeholder="Enter Name" autofocus required value="Ravi"/></td>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td><input type="password" placeholder="Enter Password" required value="dsfsdfsdf"/></td>
+        </tr>
+        <tr>
+            <td>Enter Email</td>
+            <td><input type="email" placeholder="Enter Email"/></td>
+        </tr>
+        <tr>
+            <td>Enter URL</td>
+            <td><input type="url" placeholder="Enter URL"/></td>
+        </tr>
+        <tr>
+            <td>Enter Date</td>
+            <td><input type="date"/></td>
+            <td><input type="datetime-local"/></td>
+            <td><input type="week"/></td>
+            <td><input type="month"/></td>
+            <td><input type="time"/></td>
+        </tr>
+        <tr>
+            <td>Enter Range</td>
+            <td><input type="range" value="20" onchange="output_ID.value=value" step="20"/></td>
+            <td><output id="output_ID">20</output></td>
+        </tr>
+        <tr>
+            <td>Select Range</td>
+            <td><input type="range" value="20" onchange="range_id.value=value" min="10" max="120"/></td>
+            <td><output id="range_id">20</output></td>
+        </tr>
+        <tr>
+            <td>Enter Mobile</td>
+            <td><input type="text" placeholder="Enter 10 digit number" maxlength="10"/></td>
+        </tr>
+        <tr>
+            <td>Enter num</td>
+            <td><input type="number" min="10" max="20"/></td>
+        </tr>
+        <tr>
+            <td>Enter credit num</td>
+            <td><input type="text" placeholder="Enter credit card num"
+                       title="Enter 10 digits,4 small alphabets and 1 capital alphabet"
+                       pattern="[0-9]{10}|[A-Z]{4}|[a-z]{4}"/></td>
+        </tr>
+        <tr>
+            <td>Select Country</td>
+            <td><select>
+                <optgroup label="Asia">
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Srilanka">Srilanka</option>
+                </optgroup>
+                <optgroup label="Europe">
+                    <option value="Englang">England</option>
+                    <option value="France">France</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Scotland">Scotland</option>
+                </optgroup>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Leave Comment</td>
+            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="reset"/></td>
+            <td><input type="submit" value="Register"/></td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>
