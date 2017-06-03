@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function sum(){
+            /*console.log("U clicked on button");*/
+            var a = document.getElementById('box_1');
+            var b = document.getElementById('box_2');
+            var c = parseInt(a.value) + parseInt(b.value);
+            /*console.log(c);*/
+            document.getElementById("result").innerHTML = c;
+        }
+    </script>
+</head>
+<body>
+
+<h1>Accessing Elements</h1>
+
+<input type="text" id="box_1" placeholder="Enter number"/>
+<input type="text" id="box_2" placeholder="Enter number"/>
+
+<button onclick="sum()">Click</button>
+
+<h2>Result is <span id="result">0</span></h2>
+
+</body>
+</html>
