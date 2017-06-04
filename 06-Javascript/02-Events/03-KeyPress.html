@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function validate(){
+            a = document.getElementById("box_1").value;
+            b = document.getElementById("box_2").value;
+            c = document.getElementById("box_3").value;
+            alert("Key Down event fired");
+            if (c == ""){
+                document.getElementById("error_3").innerHTML = "Cannot leave blank";
+            }
+            else if(c.length >0 && c.length <=5){
+                document.getElementById("error_3").innerHTML = "Good";
+            }
+            else if(c.length >5 && c.length <=8){
+                document.getElementById("error_3").innerHTML = "Strong";
+            }
+            else {
+                document.getElementById("error_3").innerHTML = "Excellent";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h1>Key Press Events</h1>
+
+<input type="password" id="box_1" placeholder="Enter password" onkeydown="validate()"/>
+<span id="error_1"></span>
+<br/><br/>
+<input type="password" id="box_2" placeholder="Enter password" onkeypress="validate()"/>
+<span id="error_2"></span>
+<br/><br/>
+<input type="password" id="box_3" placeholder="Enter password" onkeyup="validate()"/>
+<span id="error_3"></span>
+
+</body>
+</html>
