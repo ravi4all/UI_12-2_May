@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function blank_check(){
+            a = document.getElementById("box_1");
+            if(isNaN(a)){
+                alert("Please enter a number");
+            }
+            else {
+                alert("Hello "+a.value);
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h1>Blank Check</h1>
+
+<input type="text" placeholder="Enter Name" id="box_1"/>
+
+<button id="btn_1" onclick="blank_check()">Click</button>
+
+</body>
+</html>

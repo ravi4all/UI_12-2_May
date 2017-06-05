@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>MP3 Player</title>
+<script type="text/javascript" src="jquery-3.1.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+$("a").click(function(){
+	var value = $(this).text();
+
+	document.getElementById('myaudio').pause();
+	document.getElementById('myaudio').currentTime = 0;
+	document.getElementById('album').src=value+".jpg";
+	document.getElementById('myaudio').src="audio/"+value+".mp3";
+	document.getElementById('myaudio').play();
+});
+});
+</script>
+</head>
+<body>
+<img id="album" alt="Not Supported" src="bang-bang.jpg" width="90" height="90">
+<audio id="myaudio" controls="controls" loop="loop" >
+<source src="audio/audio.mp3" type="audio/mp3">
+</audio>
+<br>
+<br>
+<br>
+<div style="border: solid;border-color: blue;width: 200px;">
+<img src="bang-bang.jpg" width="50" height="50"><a href="#" >bang-bang</a><br>
+<img src="tu_meri.jpg" width="50" height="50"><a href="#">tu_meri</a><br>
+<img src="bang-bang.jpg" width="50" height="50"><a href="#">tumhiho</a><br>
+
+</div>
+</body>
+</html>

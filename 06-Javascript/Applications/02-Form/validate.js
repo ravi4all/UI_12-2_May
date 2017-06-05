@@ -17,7 +17,12 @@ function init(){
 }
 
 function add(){
+    /*li = document.getElementById("result");*/
+    ul = document.getElementById("list");
+    li = document.createElement('li');
+    li.innerHTML = a.value + " " + d.value;
 
+    ul.appendChild(li);
 }
 
 function validate(){
