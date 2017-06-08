@@ -1,0 +1,27 @@
+#main-nav {
+    position: fixed;
+    width: 30%;
+    transform: translate(0%,0%);
+    transition: 1s;
+}
+#main-nav.hide_menu {
+    transform: translate(-120%,0%);
+}
+/*#main-nav.active_menu {
+
+}*/
+#main-nav ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#main-nav ul li{
+    font-size: 20px;
+    background-color: #737373;
+}
+#main-nav ul li a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
