@@ -9,7 +9,36 @@ function init(){
     mobile = document.getElementById("box_3");
     document.getElementById("add").addEventListener("click", addStudent);
     document.getElementById("delete").addEventListener("click", deleteStudent);
+    document.getElementById("save").addEventListener("click", saveStudent);
+    document.getElementById("load").addEventListener("click", loadStudent);
+    loadStudent();
 }
+
+
+function saveStudent(){
+    if(window.localStorage){
+        var json = JSON.stringify(stud_obj.studentList);
+        localStorage.setItem('data',json);
+        console.log("Data Saved");
+        console.log(json);
+    }
+    else {
+        document.write("Localstorage not supported")
+    }
+}
+
+function loadStudent(){
+    if(window.localStorage){
+        var data = localStorage.getItem('data');
+        var json = JSON.parse(data);
+        stud_obj.studentList = json;
+        printStudent();
+    }
+    else {
+        document.write("Localstorage not supported")
+    }
+}
+
 
 function addStudent(){
     var ul = document.getElementById("studentList");
