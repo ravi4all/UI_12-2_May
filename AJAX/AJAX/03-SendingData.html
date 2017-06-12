@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+   <h1>Sending Data with GET</h1>
+
+<button type="button" onclick="loadData()">Request data</button>
+
+<p id="data">
+    
+</p>
+
+<script>
+function loadData() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("data").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "03-RetrievalData.php?fname=Ravi&lname=Tyagi", true);
+  xhttp.send();
+}
+</script>
+         
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Retrieve all headers</h2>
+    <div id="data">
+        
+    </div>
+    <h2>Retrieve specified data</h2>
+    <div id="data2">
+    </div>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("data").innerHTML = this.getAllResponseHeaders();
+                document.getElementById("data2").innerHTML = this.getResponseHeader("Last-modified");
+            }
+        };
+        xhttp.open("GET", "ajax_data.txt", true);
+        xhttp.send();
+    </script>
+</body>
+</html>
