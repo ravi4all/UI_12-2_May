@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<h1>Hello world with jquery</h1>
+
+<img src="../../WebImages/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="image_1"/>
+<img src="../../WebImages/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="image_2"/>
+<img src="../../WebImages/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="image_3"/>
+<img src="../../WebImages/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="image_4"/>
+
+<div id="div_1"></div>
+
+<script src="../jquery-3.2.1.min.js"></script>
+<script>
+    /*$("img").hide(3000);*/
+    var a = 10;
+    var b = 20;
+    var c = a + b;
+    $("#div_1").html(c);
+    $("img[alt='image_1'],img[alt='image_2']").hide(3000);
+</script>
+
+</body>
+</html>
