@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../jquery-3.2.1.min.js"></script>
+    <script>
+        /*$(window).on("load",function(){
+            alert("Window Loaded");
+        });*/
+        $(document).ready(function(){
+            alert("Document Ready");
+            /*$("#box_1").on("blur", function(){
+                alert("Blur Called")
+            })*/
+            $("#box_1").on("change", function(){
+                alert("Change Called");
+            })
+        })
+
+    </script>
+</head>
+<body>
+
+<h1>Events</h1>
+
+<input type="text" id="box_1"/>
+
+</body>
+</html>
