@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #header{
+            position: absolute;
+            top: 50px;
+            width: 100%;
+            background-color: red;
+            left: 0px;
+            text-align: center;
+            transition: 1s;
+        }
+        #header.scroll {
+            position: fixed;
+            background-color: green;
+            transition: 1s;
+            top: 0px;
+        }
+    </style>
+    <script src="../jquery-3.1.1.js"></script>
+</head> 
+<body>
+   
+   <header id="header">
+       <h1>Animation on Scroll</h1>
+   </header>
+   
+   <div>
+       <img src="../../Images/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="">
+   </div>
+   <div>
+       <img src="../../Images/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="">
+   </div>
+    <div>
+       <img src="../../Images/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="">
+   </div>
+    <div>
+       <img src="../../Images/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="">
+   </div>
+   <div>
+       <img src="../../Images/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="">
+   </div>
+   <div>
+       <img src="../../Images/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="">
+   </div>
+   <div>
+       <img src="../../Images/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="">
+   </div>
+   <div>
+       <img src="../../Images/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="">
+   </div>
+    
+    
+    <script>
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() > 50){
+          $("#header").addClass("scroll");
+            }
+        else {
+          $("#header").removeClass("scroll");
+            }
+            })
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery-3.1.1.js"></script>
+</head>
+<body>
+   
+   <h1>Jquery Events</h1>
+   
+   <img src="../../BootstrapDemo/00805-2_2for10_HomePageBanner_desktop_R2.jpg" alt="image" height="300" width="600">
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("img").on("click",function(){
+            $(this).hide(3000);
+        })
+    });
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery-3.1.1.js"></script>
+</head>
+<body>
+   
+   <h1>Fade Effect</h1>
+   
+   <button id="btn">Fade In</button>
+   <button id="btn2">Fade Out</button>
+   <button id="btn3">Fade Toggle</button>
+   <br>
+   <img src="../../Images/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="">
+   
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("img").fadeOut(1000);
+            });
+            $("#btn2").click(function(){
+                $("img").fadeIn(1000);
+            });
+            $("#btn3").click(function(){
+                $("img").fadeToggle(1000);
+            });
+        })
+    </script>
+</body>
+</html>

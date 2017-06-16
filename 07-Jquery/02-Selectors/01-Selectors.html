@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery-3.1.1.js"></script>
+</head>
+<body>
+   
+   <h1>Basic Selectors</h1>
+   
+   <button id="btn">Click Me</button>
+   
+   <img src="../../Images/Pizza%20Food%20Hd%20Wallpaper.jpg" alt="">
+   
+   <script>
+       /*$(document).ready(function(){
+           $("#btn").click(function(){
+               $("img").fadeOut(1000);
+           })
+       })*/
+       $(document).ready(function(){
+           $("#btn").on('click',function(){
+               $("img").fadeOut(1000);
+           })
+       })
+    </script>
+    
+</body>
+</html>

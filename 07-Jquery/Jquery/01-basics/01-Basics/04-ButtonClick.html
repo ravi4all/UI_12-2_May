@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery-3.1.1.js"></script>
+</head>
+<body>
+   
+   <h1>Jquery Selectors</h1>
+   <button id="btn">Click Me</button>
+   <div id="div1">
+       <p>This paragraph will hide after clicking on button.</p>
+       <p>This paragraph will hide after clicking on button.</p>
+       <p>This paragraph will hide after clicking on button.</p>
+       <p>This paragraph will hide after clicking on button.</p>
+       <p>This paragraph will hide after clicking on button.</p>
+       <p>This paragraph will hide after clicking on button.</p>
+   </div>
+   
+   <div id="div2">
+       <p style="display:none;">This paragraph is appeared after clicking on button</p>
+       <p style="display:none;">This paragraph is appeared after clicking on button</p>
+       <p style="display:none;">This paragraph is appeared after clicking on button</p>
+       <p style="display:none;">This paragraph is appeared after clicking on button</p>
+       <p style="display:none;">This paragraph is appeared after clicking on button</p>
+       <p style="display:none;">This paragraph is appeared after clicking on button</p>
+   </div>
+   
+   <div id="div3">
+       <p>I will hide after double clicking on me</p>
+   </div>
+   <!--<div id="div4">
+       <p>I will hide after double clicking on me</p>
+   </div>
+   <div id="div5">
+       <p>I will hide after double clicking on me</p>
+   </div>
+   <div id="div6">
+       <p>I will hide after double clicking on me</p>
+   </div>
+   <div id="div7">
+       <p>I will hide after double clicking on me</p>
+   </div>-->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+       $("#btn").click(function(){
+           $("#div1 p").hide(3000);
+           $("#div2 p").show(3000);
+           /*$("#div4").hide(3000);
+           $("#div5").hide(3000);
+           $("#div6").hide(3000);
+           $("#div7").hide(3000);*/
+       });
+        $("#div3 p").dblclick(function(){
+            $(this).hide(2000);
+        })
+    });
+</script>
+    
+</body>
+</html>

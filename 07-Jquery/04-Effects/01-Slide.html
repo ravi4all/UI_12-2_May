@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery-3.1.1.js"></script>
+</head>
+<body>
+   
+   <h1>Slide Effect</h1>
+   
+   <button id="btn">Slide Up</button>
+   <button id="btn2">Slide Down</button>
+   <button id="btn3">Slide Toggle</button>
+   <br>
+   <img src="../../Images/WebImages/0c84c1948d7b32787aa6fa565505dacc_view.jpg" alt="">
+   
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("img").slideUp(1000);
+            });
+            $("#btn2").click(function(){
+                $("img").slideDown(1000);
+            });
+            $("#btn3").click(function(){
+                $("img").slideToggle(1000);
+            });
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Mouse Events Example</title>
+<style>
+.paraStyle
+{
+background-color: cyan;
+font-family: sans-serif;
+font-size: 20px;
+font-style: italic;
+font-weight: bold;
+text-align: center;
+border-color: red;
+border-style: solid;
+border-width: 5px;
+}
+</style>
+</head>
+<body>
+<p>Mouse Events and multiple event attach </p>
+<script type="text/javascript" src="../js/jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+/* $("p").mouseenter(function(){
+	  $("p").addClass("paraStyle");
+	});
+$("p").mouseleave(function(){
+	$("p").removeClass("paraStyle");
+	}); */
+$("p").bind("mouseenter mouseleave",function(){
+	$("p").toggleClass("paraStyle");
+});		
+</script>
+</body>
+</html>

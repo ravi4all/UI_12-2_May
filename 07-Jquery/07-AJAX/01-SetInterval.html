@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <h1>Set Interval</h1>
+   <input type="text" placeholder="Enter here">
+   
+   <button id="btn" onclick="caller()">Click Me</button>
+   
+   <script>
+       function caller(){
+           setTimeout(disp,5000);
+       }
+       
+       function disp(){
+           for(i=0;i<100000;++i){
+               console.log(i);
+           }
+       }
+    </script>
+    
+</body>
+</html>

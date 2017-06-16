@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            height: 250px;
+            width: 400px;
+            margin-bottom: 40px;
+            border: 1px solid red;
+        }
+        img {
+            width: 100%;
+        }
+        #result1, #result3 {
+            float: left;
+        }
+        #result2, #result4 {
+            float: right;
+        }
+        #pre-loader {
+            background: #fff;
+            position: fixed;
+            height: 100%;
+            text-align: center;
+            top: 0px;
+            z-index: 100;
+            left: 0px;
+            width: 100%;
+        }
+        #pre-loader img {
+            width: auto;
+        }
+        .loader {
+            position: absolute;
+            top: 35%;
+            left: 35%;
+        }
+    </style>
+    <script src="../jquery-3.1.1.js"></script>
+</head>
+<body>
+   
+   <h1>Asynchronous Style</h1>
+
+   <div id="pre-loader">
+       <div class="loader">
+           <img src="https://www.createwebsite.net/wp-content/uploads/2015/09/Loader.gif" alt="image"/>
+       </div>
+   </div>
+   
+   <div id="result1">
+       <img src="https://www.createwebsite.net/wp-content/uploads/2015/09/Loader.gif" alt="">
+   </div>
+   <div id="result2">
+       <img src="https://www.createwebsite.net/wp-content/uploads/2015/09/Loader.gif" alt="">
+   </div>
+   <div id="result3">
+       <img src="https://www.createwebsite.net/wp-content/uploads/2015/09/Loader.gif" alt="">
+   </div>
+   <div id="result4">
+       <img src="https://www.createwebsite.net/wp-content/uploads/2015/09/Loader.gif" alt="">
+   </div>
+   
+   <script>
+       /*for(var i=0; i<10000; i++){
+           console.log("Loading");
+       }*/
+       $(window).on("load", function(){
+           alert("Loading");
+           $("#pre-loader").fadeOut(1000);
+       });
+       $(document).ready(function(){
+           console.log("First");
+           console.log("Second");
+           $.get("data.html", function(data){
+               $("#result1").html(data);
+               console.log("Third");
+           });
+           $.get("data1.html", function(data){
+               $("#result2").html(data);
+               console.log("Fourth");
+           })
+           $.get("data2.html", function(data){
+               $("#result3").html(data);
+               console.log("Fifth");
+           })
+           $.get("data3.html", function(data){
+               $("#result4").html(data);
+               console.log("Sixth");
+           })
+           console.log("Seventh");
+       })
+
+    </script>
+    
+</body>
+</html>

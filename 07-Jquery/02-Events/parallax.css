@@ -1,0 +1,60 @@
+body {
+    background-image: url("http://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2015/11/03/103135046-GettyImages-110022758.jpg?v=1446585058");
+    background-size: 100% 100%;
+    margin: 0px;
+    background-attachment: fixed;
+}
+
+div {
+    height: 650px;
+    margin-bottom: 300px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /*opacity: 0;*/
+    transition: 1s;
+}
+#div_1 {
+    background-image: url("../../WebImages/WebImages/1213130595_wallpaper_iron_man_02_1920x1200.jpg");
+}
+#div_2 {
+    background-image: url("../../WebImages/WebImages/IMG-20140419-WA0002.jpg");
+    overflow: hidden;
+}
+#div_3 {
+    background-image: url("../../WebImages/WebImages/wallpaper_14028.jpg");
+}
+#div_4 {
+    background-image: url("../../WebImages/WebImages/Terminator002.jpg");
+}
+#div_5 {
+    background-image: url("../../WebImages/WebImages/wallpaper_1277.jpg");
+}
+#div_6 {
+    background-image: url("../../WebImages/WebImages/batman_arkham_knight-1366x768.jpg");
+}
+
+/*div.animate_element {
+    opacity: 1;
+}*/
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+
+.left img {
+    transform: translate(-100%,0px);
+    transition: 2s;
+}
+.right img {
+    transform: translate(100%,0px);
+    transition: 2s;
+}
+
+#div_2.animate_element .right img,#div_2.animate_element .left img {
+    transform: translate(0px,0px);
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery-3.1.1.js"></script>
+</head>
+<body>
+   
+   <h1>Main Events</h1>
+   
+   <input type="text" placeholder="Enter Text" id="txtbox">
+   <span id="result"></span>
+   
+    <script>
+        $(document).ready(function(){
+            $("#txtbox").blur(function(){
+                $("#result").html("You cannot leave this field blank");
+            });
+            $("#txtbox").keyup(function(){
+                $("#result").html("Proceed");
+            });
+        })
+    </script>
+</body>
+</html>

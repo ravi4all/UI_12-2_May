@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../jquery-3.1.1.js"></script>
+</head>
+<body>
+   
+   <h1>Jquery Selectors</h1>
+   <div id="div1">
+       <p>This paragraph will hide after 3s.</p>
+       <p>This paragraph will hide after 3s.</p>
+       <p>This paragraph will hide after 3s.</p>
+       <p>This paragraph will hide after 3s.</p>
+       <p>This paragraph will hide after 3s.</p>
+       <p>This paragraph will hide after 3s.</p>
+   </div>
+   
+   <div id="div2">
+       <p style="display:none;">This paragraph is appeared after 3s</p>
+       <p style="display:none;">This paragraph is appeared after 3s</p>
+       <p style="display:none;">This paragraph is appeared after 3s</p>
+       <p style="display:none;">This paragraph is appeared after 3s</p>
+       <p style="display:none;">This paragraph is appeared after 3s</p>
+       <p style="display:none;">This paragraph is appeared after 3s</p>
+   </div>
+   
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("p").hide(3000);
+        $("#div2 p").show(3000);
+    });
+</script>
+    
+</body>
+</html>

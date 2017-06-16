@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Live Query Demo</title>
+<style type="text/css">
+.buttonClass{
+background-color: cyan;
+border-color: red;
+border-width: 5px;
+border-style: solid;
+border-radius:7px;
+}
+</style>
+</head>
+<body>
+<input type="button" class="buttonClass" value ="Button">
+<script type="text/javascript" src="../js/jquery/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+// With out on 
+/* $(".buttonClass").click(function(){
+	$(this).after("<input type='button' class='buttonClass' value='button'>");
+}); */
+// with on
+$(document).ready(function(){
+$(".buttonClass").on("click",function(){
+	alert("Call");
+	$(this).after("<input type='button' class='buttonClass' value='Button'>");
+});
+});
+</script>
+</body>
+</html>
