@@ -1,0 +1,90 @@
+#header {
+    padding: 10px  0px;
+}
+#header .header-top {
+    margin-bottom: 15px;
+}
+#header .nav-btn button {
+    background-color: transparent;
+    border: 1px solid #000;
+    padding: 5px;
+}
+#header .nav-btn .line {
+    display: block;
+    width: 20px;
+    border: 2px solid #000;
+    margin-bottom: 2px;
+}
+#header .logo {
+    text-align: center;
+    padding-top: 10px;
+}
+#header .logo img {
+    width: 43%;
+}
+#header .onion_inc {
+    text-align: right;
+}
+#header .onion_inc span {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+#header .header-middle {
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+#header .header-middle ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#header .header-middle ul li {
+    display: inline-block;
+    margin: 0px 4px;
+    font-size: 12px;
+}
+#header .finest_news {
+    text-align: center;
+}
+#header .finest_news h1 {
+    font-size: 14px;
+    padding: 10px 50px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    background-color: green;
+    margin: 0px;
+}
+
+#header .meta-data {
+    padding: 10px 0px 0px;
+}
+#header .motto {
+    text-align: right;
+    padding-top: 10px;
+}
+
+#main-navigation {
+    border-bottom: 1px solid #c0c0c0;
+}
+#main-navigation ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+#main-navigation ul li {
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 32px;
+}
+#main-navigation ul li a {
+    color: #000;
+}
+#main-navigation ul li:last-child {
+    border-left: 1px solid #c0c0c0;
+}
+#main-navigation ul li a:hover {
+    color: #cccccc;
+    text-decoration: none;
+}
